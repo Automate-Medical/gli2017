@@ -1,0 +1,22 @@
+{
+  "name": "gli2017.ts",
+  "version": "1.0.0",
+  "description": "A TypeScript implementation of Global Lung Function Initiative's reference values for the carbon monoxide transfer factor for Caucasians",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automate-Medical/gli2017.ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Automate-Medical/gli2017.ts/issues"
+  },
+  "homepage": "https://github.com/Automate-Medical/gli2017.ts#readme",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}
