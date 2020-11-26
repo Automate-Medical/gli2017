@@ -2,8 +2,10 @@
   "name": "gli2017",
   "version": "1.0.0",
   "description": "A TypeScript implementation of Global Lung Function Initiative's reference values for the carbon monoxide transfer factor for Caucasians",
-  "main": "src/index.js",
+  "module": "dist/index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublish": "npm run tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
