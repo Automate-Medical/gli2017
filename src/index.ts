@@ -45,7 +45,7 @@ function zscore(M: number, L: number, S: number, measured: number): number {
   return (Math.pow((measured / M), L) - 1) / (L * S);
 }
 
-export function dlco(units: units, sex: sex, height: number, age: number, measured: number): GLI2017Result {
+export function dlco({ units, sex, height, age, measured } : { units: units, sex: sex, height: number, age: number, measured: number }): GLI2017Result {
   let M, S, L;
   
   const { Mspline, Sspline } = coefficients(dlcoLookups, units, sex, age);
@@ -88,7 +88,7 @@ export function dlco(units: units, sex: sex, height: number, age: number, measur
   }
 }
 
-export function va(sex: sex, height: number, age: number, measured: number): GLI2017Result {
+export function va({ sex, height, age, measured }: { sex: sex, height: number, age: number, measured: number }): GLI2017Result {
   let M, S, L;
 
   // @todo we use "SI" here because there's only one set of unit lookups for va
@@ -118,7 +118,7 @@ export function va(sex: sex, height: number, age: number, measured: number): GLI
   }
 }
 
-export function kco(units: units, sex: sex, height: number, age: number, measured: number): GLI2017Result {
+export function kco({ units, sex, height, age, measured } : { units: units, sex: sex, height: number, age: number, measured: number }): GLI2017Result {
   let M, S, L;
 
   const { Mspline, Sspline } = coefficients(kcoLookups, units, sex, age);  
