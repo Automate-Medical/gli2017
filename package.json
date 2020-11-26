@@ -20,5 +20,7 @@
   "homepage": "https://github.com/Automate-Medical/gli2017#readme",
   "devDependencies": {
     "typescript": "^4.1.2"
-  }
+  },
+  "type": "module",
+  "types": "dist/index.d.ts"
 }
